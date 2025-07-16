@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom'
 function Header() {
   const authService = useSelector((state)=> state.auth.status);
   const navigate = useNavigate();
-  const naItems = [
+  const navItems = [
     {
      name:'Home',
      slug:'/',
@@ -54,7 +54,7 @@ function Header() {
             )}
             {authStatus && (
               <li>
-                <LogoutBtn />
+                <logout />
               </li>
             )}
           </ul>
